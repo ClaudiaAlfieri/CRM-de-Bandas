@@ -1,89 +1,106 @@
-# Laravel Music Bands CRM
+# Laravel Music Bands CRM 🎸
 
-Este projeto foi desenvolvido como trabalho final da disciplina de **Programação para a WEB - servidor (server-side)** no curso de Front End do CESAE Digital.
+This project was developed as the final assignment for the **Web Programming - Server Side** course in the Front-End program at CESAE Digital. "Laravel Music Bands CRM" is a customer relationship management system adapted for managing music bands and their albums, designed to showcase back-end development skills using Laravel, PHP, and MySQL.
 
-## Sobre o Projeto
+## 📋 Project Overview
 
-Este sistema é um CRM (Customer Relationship Management) adaptado para gerenciamento de bandas musicais e seus álbuns. Permite visualização, cadastro, edição e remoção de dados relacionados a bandas e álbuns musicais, com diferentes níveis de permissão baseados no tipo de usuário.
+Laravel Music Bands CRM is a responsive web application that allows users to manage music bands and albums with different permission levels. The system includes multiple features showcasing different aspects of the application:
 
-## Funcionalidades
+### 🔐 Authentication System
+- Registration of new users
+- Login for existing users
+- Personalized dashboard for authenticated users
 
-- **Sistema de Autenticação**:
-  - Registro de novos usuários
-  - Login de usuários existentes
-  - Dashboard personalizado para usuários autenticados
+### 🎵 Band Management
+- View all registered bands
+- Band details (name, photo, number of albums)
+- Complete CRUD functionality (Create, Read, Update, Delete)
 
-- **Gerenciamento de Bandas**:
-  - Visualização de todas as bandas cadastradas
-  - Detalhes de cada banda (nome, foto, número de álbuns)
-  - Funcionalidades CRUD completas (Create, Read, Update, Delete)
+### 💿 Album Management 
+- View albums by band
+- Album details (name, image, release date)
+- Complete CRUD functionality
 
-- **Gerenciamento de Álbuns**:
-  - Visualização de álbuns por banda
-  - Detalhes de cada álbum (nome, imagem, data de lançamento)
-  - Funcionalidades CRUD completas
+### 👥 Access Levels
+- **Administrator**: Can insert, edit, and delete bands and albums
+- **Authenticated User**: Can edit information
+- **Visitor**: View-only access to content
 
-- **Níveis de Acesso**:
-  - **Administrador**: Pode inserir, editar e apagar bandas e álbuns
-  - **Usuário Autenticado**: Pode editar informações
-  - **Visitante**: Somente visualização de conteúdo
+## ✨ Features
 
-## Tecnologias Utilizadas
+- Fully responsive design that adapts to different screen sizes
+- Bootstrap integration for modern, mobile-first layouts
+- Navigation bar with dropdown menu for mobile devices
+- Band and album showcase with details
+- Grid layout with cards for bands and albums
+- Search functionality
+- Form validation
+- Custom styling to match the music theme
 
-- **Laravel** - Framework PHP para desenvolvimento web
-- **MySQL** - Sistema de gerenciamento de banco de dados
-- **Blade** - Sistema de templates do Laravel
-- **Bootstrap** - Framework front-end para design responsivo
+## 🛠️ Technologies Used
 
-## Requisitos de Sistema
+- **Laravel**: PHP framework for web development
+- **MySQL**: Database management system
+- **Blade**: Laravel's templating engine
+- **Bootstrap**: Front-end framework for responsive design
+- **PHP 8.1+**: For server-side logic
+- **Composer**: For dependency management
+- **NPM**: For asset compilation
 
-- PHP 8.1 ou superior
+## 🚀 Requirements
+
+- PHP 8.1 or higher
 - Composer
-- MySQL ou outro banco de dados suportado pelo Laravel
-- Node.js e NPM (para compilação de assets)
+- MySQL or other database supported by Laravel
+- Node.js and NPM (for asset compilation)
 
-## Instalação
+## 🔄 Installation
 
-1. Clone o repositório:
+1. Clone the repository:
    ```
-   git clone https://github.com/seu-usuario/laravel-music-bands-crm.git
+   git clone https://github.com/your-username/laravel-music-bands-crm.git
    cd laravel-music-bands-crm
    ```
 
-2. Instale as dependências:
+2. Install dependencies:
    ```
    composer install
    npm install
    npm run dev
    ```
 
-3. Configure o ambiente:
-   - Crie um arquivo `.env` baseado no `.env.example`
-   - Configure suas credenciais de banco de dados no arquivo `.env`
+3. Configure the environment:
+   - Create a `.env` file based on `.env.example`
+   - Configure your database credentials in the `.env` file
 
-4. Execute as migrações e seeders:
+4. Run migrations and seeders:
    ```
    php artisan migrate
    php artisan db:seed
    ```
 
-5. Crie o link simbólico para o armazenamento:
+5. Create a symbolic link for storage:
    ```
    php artisan storage:link
    ```
 
-6. Inicie o servidor:
+6. Start the server:
    ```
    php artisan serve
    ```
 
-## Estrutura do Banco de Dados
+## 📁 Database Structure
 
-O sistema utiliza as seguintes tabelas principais:
-- `users` - Armazena informações dos usuários
-- `bands` - Armazena informações das bandas
-- `albums` - Armazena informações dos álbuns
+The system uses the following main tables:
+- `users`: Stores user information
+- `bands`: Stores band information
+- `albums`: Stores album information
 
-## Contribuição
 
-Este projeto foi desenvolvido para fins educacionais. Contribuições são bem-vindas através de pull requests.
+## 👨‍💻 Author
+
+This project was developed by Claudia Alfieri for educational purposes.
+
+## 📝 Contribution
+
+Contributions are welcome through pull requests.
